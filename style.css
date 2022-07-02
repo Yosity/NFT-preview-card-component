@@ -1,0 +1,144 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 15px;
+    box-shadow: 0 0 10px hsla(218, 44%, 22%,0.2);
+}   
+.img-section {
+    flex: 1 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+}
+img {
+    width: 90%;
+    height: 90%;
+    object-fit: fill;
+    border-radius: 10px;
+    
+}
+
+.img-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.514);
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    opacity: 0;
+    
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.view-icon {
+    width: 50px;
+    height: 45px;
+}
+
+.img-section div:hover {
+    opacity: 1;
+}
+
+
+.text-section {
+    max-width: 90%;
+    margin: 0 auto;
+    flex: 1 29%;
+    margin-top: -10px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    
+}
+h3{
+    color: aliceblue;
+    cursor: pointer;
+
+}
+h3:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.ETH-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ETH-amount {
+    display: flex;
+    justify-content: space-around;
+    color: cyan;
+}
+.ETH-amount img {
+    width: 11px;
+    margin-right: 6px;
+}
+
+.time-left {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+.time-left img {
+    width: 17px;
+    margin-right: 5px;
+}
+
+.author-section {   
+    max-width: 80%;
+   display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 15%;
+    margin-left: 18px;
+    margin-top: -3%;
+    
+}
+.author-name {
+    font-size: 15px;
+}
+span {
+    color: aliceblue;
+    cursor: pointer;
+
+}
+span:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+.author-pic {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 18px;
+    margin-right: 17px;
+}
+
+.attribution {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.attribution a {
+    color: cyan;
+}
